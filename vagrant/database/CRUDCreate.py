@@ -19,3 +19,5 @@ cheesepizza = MenuItem(
 session.add(cheesepizza)
 session.commit()
 session.query(MenuItem).all()
+firstResult = session.query(Restaurant).first()
+firstResult.name
