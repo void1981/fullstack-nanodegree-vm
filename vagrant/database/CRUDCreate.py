@@ -10,7 +10,7 @@ session.add(myFirstRestaurant)
 session.commit()
 session.query(Restaurant).all()
 cheesepizza = MenuItem(
-    name="Chesse Pizze",
+    name="Cheese Pizza",
     description="Made with all natural ingredients and fresh mozzarella",
     course="Entree",
     price="$8.99",
