@@ -132,3 +132,12 @@ Andala's
 $2.99
 43
 Auntie Ann's Diner'
+
+# delete from database
+>> > chessepizze = session.query(MenuItem).filter_by(name='Chesse Pizze').one()
+>> > print chessepizze
+<database_setup.MenuItem object at 0x7f891e28ae50 >
+>> > print chessepizze.name
+Chesse Pizze
+>> > session.delete(chessepizze)
+>> > session.commit()
